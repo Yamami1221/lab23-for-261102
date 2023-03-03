@@ -115,7 +115,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 
 		case WM_COMMAND: {
 			switch(LOWORD(wParam)){
-				case 1: {
+				case 1: {/*Plus*/
+					/* Get the text from the text field */
 					GetWindowText(input1, buffer1, 100);
 					GetWindowText(input2, buffer2, 100);
 					double a = std::stod(buffer1);
@@ -126,7 +127,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 					MessageBox(hwnd, resultString, "Result", MB_OK);
 					break;
 				}
-				case 2: {
+				case 2: {/*Minus*/
 					GetWindowText(input1, buffer1, 100);
 					GetWindowText(input2, buffer2, 100);
 					double a = std::stod(buffer1);
@@ -137,7 +138,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 					MessageBox(hwnd, resultString, "Result", MB_OK);
 					break;
 				}
-				case 3: {
+				case 3: {/*Multiply*/
 					GetWindowText(input1, buffer1, 100);
 					GetWindowText(input2, buffer2, 100);
 					double a = std::stod(buffer1);
@@ -148,7 +149,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 					MessageBox(hwnd, resultString, "Result", MB_OK);
 					break;
 				}
-				case 4: {
+				case 4: {/*Divide*/
 					GetWindowText(input1, buffer1, 100);
 					GetWindowText(input2, buffer2, 100);
 					double a = std::stod(buffer1);
